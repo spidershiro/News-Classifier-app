@@ -2,9 +2,9 @@ import streamlit as st
 import pickle
 import json
 
-with open("models/model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
-with open("models/vectorizer.pkl", "rb") as f:
+with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 with open("metrics.json", "r") as f:
     metrics = json.load(f)
