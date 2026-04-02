@@ -2,11 +2,11 @@ import streamlit as st
 import pickle
 import json
 
-with open("models/model.pkl", "rb") as f:
+with open('models/trained/model.pkl', "rb") as f:
     model = pickle.load(f)
-with open("models/vectorizer.pkl", "rb") as f:
+with open('models/trained/vectorizer.pkl', "rb") as f:
     vectorizer = pickle.load(f)
-with open("metrics.json", "r") as f:
+with open("models/artifacts/metrics.json", "r") as f:
     metrics = json.load(f)
 
 st.title("News prediction model")
